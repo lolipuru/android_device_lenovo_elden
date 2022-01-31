@@ -1,0 +1,1 @@
+require board=sun|elden_prc|TB322FC
