@@ -1,0 +1,1 @@
+genfscon proc /support_pen u:object_r:proc_pen:s0

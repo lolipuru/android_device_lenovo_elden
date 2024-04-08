@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024 Paranoid Android
+
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Lenovo Parts</string>
+
+    <!-- Lenovo Stylus -->
+    <string name="stylus_title">Stylus</string>
+    <string name="stylus_switch_title">Force recognize stylus</string>
+    <string name="stylus_switch_summary">Enable this settings to assuming a compatible pen is connected</string>
+</resources>

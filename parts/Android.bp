@@ -1,0 +1,18 @@
+//
+// Copyright (C) 2024 Paranoid Android
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+android_app {
+    name: "LenovoParts",
+    certificate: "platform",
+    srcs: ["src/**/*.java"],
+    platform_apis: true,
+    privileged: true,
+    system_ext_specific: true,
+    static_libs: [
+        "androidx.core_core",
+        "SettingsLib",
+    ],
+}

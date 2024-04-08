@@ -1,0 +1,1 @@
+allow system_app proc_pen:file rw_file_perms;
