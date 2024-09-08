@@ -49,6 +49,7 @@ AUDIO_FEATURE_ENABLED_SSR := true
 AUDIO_FEATURE_ENABLED_SVA_MULTI_STAGE := true
 BOARD_SUPPORTS_OPENSOURCE_STHAL := true
 BOARD_SUPPORTS_SOUND_TRIGGER := true
+TARGET_PROVIDES_AUDIO_HAL := true
 TARGET_PROVIDES_LIBAR_PAL := true
 TARGET_USES_QCOM_MM_AUDIO := true
 
@@ -166,7 +167,9 @@ BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 2
 DEVICE_MANIFEST_SKUS := sun
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 DEVICE_MANIFEST_SUN_FILES := \
-    $(DEVICE_PATH)/configs/vintf/manifest_sun.xml
+    $(DEVICE_PATH)/configs/vintf/manifest_sun.xml \
+    hardware/qcom-caf/sm8750/audio/primary-hal/configs/common/manifest_non_qmaa.xml \
+    hardware/qcom-caf/sm8750/audio/primary-hal/configs/common/manifest_non_qmaa_extn.xml
 
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/vintf/compatibility_matrix.device.xml \
