@@ -51,3 +51,10 @@ on fs
     write /proc/sys/kernel/firmware_config/force_sysfs_fallback 1
     write /sys/class/remoteproc/remoteproc0/state start
     # ELDEN code for ELDEN-550 by gaoyh14 at 20250228 end
+
+# Load ADSP firmware for PMIC
+    mkdir /firmware
+    mount vfat /dev/block/bootdevice/by-name/modem${ro.boot.slot_suffix} /firmware ro context=u:object_r:firmware_file:s0
+
+on property:dev.mnt.blk.firmware=*
+    write /sys/kernel/boot_adsp/ssr 1
