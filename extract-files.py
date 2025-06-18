@@ -185,7 +185,14 @@ blob_fixups: blob_fixups_user_type = {
             'vendor.qti.hardware.display.composer3-V1-ndk.so',
             'vendor.qti.hardware.display.composer3-V3-ndk.so'
         ),
-
+    (
+        'vendor/lib64/libarcsoft_video_superportrait.so',
+    ): blob_fixup()
+        .clear_symbol_version('AHardwareBuffer_allocate')
+        .clear_symbol_version('AHardwareBuffer_describe')
+        .clear_symbol_version('AHardwareBuffer_lockPlanes')
+        .clear_symbol_version('AHardwareBuffer_release')
+        .clear_symbol_version('AHardwareBuffer_unlock'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
