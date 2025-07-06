@@ -33,14 +33,6 @@ def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
     (
-        'libagm',
-        'libagmclient',
-        'libar-acdb',
-        'liblx-osal',
-        'libar-gsl',
-        'libats',
-        'libarmemlog',
-        'libvui_intf',
         'vendor.qti.hardware.display.config-V12-ndk',
         'android.hardware.security.sharedsecret-V2-ndk',
     ): lib_fixup_remove,
