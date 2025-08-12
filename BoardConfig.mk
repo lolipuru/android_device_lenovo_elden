@@ -60,6 +60,9 @@ TARGET_BOOTLOADER_BOARD_NAME := sun
 TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
 
+# Display
+TARGET_SCREEN_DENSITY := 420
+
 # Dtb/o
 BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
 BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtb
@@ -74,7 +77,6 @@ BOARD_MKBOOTIMG_INIT_ARGS += --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
 # Kernel
 BOARD_KERNEL_PAGESIZE   := 4096
 BOARD_KERNEL_BASE       := 0x00000000
-BOARD_KERNEL_IMAGE_NAME := Image
 
 BOARD_KERNEL_CMDLINE := \
     video=vfb:640x400,bpp=32,memsize=3072000
@@ -106,6 +108,9 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(KERNEL_PATH)/vendor_ramdisk/,$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules) \
     $(call find-copy-subdir-files,*,$(KERNEL_PATH)/system_dlkm/,$(TARGET_COPY_OUT_SYSTEM_DLKM)/lib/modules)
 
+# Metadata
+BOARD_USES_METADATA_PARTITION := true
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144
 
@@ -123,6 +128,10 @@ BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 11806965760
 BOARD_PARTITION_LIST := $(call to-upper, $(BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST))
 $(foreach p, $(BOARD_PARTITION_LIST), $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := ext4))
 $(foreach p, $(BOARD_PARTITION_LIST), $(eval TARGET_COPY_OUT_$(p) := $(call to-lower, $(p))))
+
+# Platform
+BOARD_USES_QCOM_HARDWARE := true
+TARGET_BOARD_PLATFORM := sun
 
 # Recovery
 BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
@@ -165,6 +174,21 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
 DEVICE_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml \
     hardware/qcom-caf/common/compatibility_matrix_aidl.xml
+
+# WiFi
+BOARD_WLAN_DEVICE := qcwcn
+BOARD_HOSTAPD_DRIVER := NL80211
+BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
+BOARD_WPA_SUPPLICANT_DRIVER := NL80211
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
+CONFIG_IEEE80211AX := true
+WIFI_DRIVER_DEFAULT := qca_cld3
+WIFI_DRIVER_STATE_CTRL_PARAM := "/dev/wlan"
+WIFI_DRIVER_STATE_OFF := "OFF"
+WIFI_DRIVER_STATE_ON := "ON"
+WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
+WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
+WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
 include vendor/lenovo/elden/BoardConfigVendor.mk
