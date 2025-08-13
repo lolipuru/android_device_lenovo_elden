@@ -323,19 +323,16 @@ vendor/lib64/vendor.qti.hardware.agm-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.pal-V1-ndk.so
 
 # Audio Config
-vendor/etc/audio/sku_sun_qssi/audio_policy_configuration.xml
 vendor/etc/usecaseKvManager.xml
 vendor/etc/audio/sku_sun/audio_effects.conf
 vendor/etc/audio/sku_sun/audio_effects_config_stub.xml
 vendor/etc/audio/sku_sun/audio_effects_config.xml
 vendor/etc/audio/sku_sun/audio_effects.xml
-vendor/etc/audio/sku_sun/audio_policy_configuration.xml
 vendor/etc/audio/sku_sun/mixer_paths_sun_cdp.xml
 vendor/etc/audio/sku_sun/mixer_paths_sun_mtp_wsa883x_qmp.xml
 vendor/etc/audio/sku_sun/mixer_paths_sun_mtp.xml
 vendor/etc/audio/sku_sun/mixer_paths_sun_qrd_sku2.xml
 vendor/etc/audio/sku_sun/mixer_paths_sun_qrd.xml
-vendor/etc/audio/sku_sun_qssi/audio_policy_configuration.xml
 vendor/etc/audio/sku_sun/resourcemanager_sun_cdp.xml
 vendor/etc/audio/sku_sun/resourcemanager_sun_mtp.xml
 vendor/etc/audio/sku_sun/resourcemanager_sun_qrd_sku2.xml
