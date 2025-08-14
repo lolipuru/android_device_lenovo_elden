@@ -185,6 +185,7 @@ DEVICE_MANIFEST_SUN_FILES := \
 
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/vintf/compatibility_matrix.device.xml \
+    $(DEVICE_PATH)/configs/vintf/compatibility_matrix.lenovo.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
 
 DEVICE_MATRIX_FILE := \

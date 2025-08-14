@@ -1,0 +1,23 @@
+<compatibility-matrix version="8.0" type="framework">
+    <hal format="aidl" optional="true">
+        <name>android.hardware.media.c2</name>
+        <interface>
+            <name>IComponentStore</name>
+            <instance>dolby</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.dolby.dvs</name>
+        <interface>
+            <name>IDvs</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.vibrator_dual.device</name>
+        <interface>
+            <name>IVibratorDual</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</compatibility-matrix>
