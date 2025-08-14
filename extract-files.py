@@ -122,19 +122,13 @@ blob_fixups: blob_fixups_user_type = {
         ),
     (
        'vendor/lib64/hw/libaudioeffecthal.qti.so',
-       'vendor/lib64/soundfx/libbundleaidl.so',
        'vendor/lib64/soundfx/libdlbvolaidl.so',
-       'vendor/lib64/soundfx/libdownmixaidl.so',
-       'vendor/lib64/soundfx/libdynamicsprocessingaidl.so',
-       'vendor/lib64/soundfx/libloudnessenhanceraidl.so',
        'vendor/lib64/soundfx/libqcompostprocbundle.so',
        'vendor/lib64/soundfx/libqcomvisualizer.so',
        'vendor/lib64/soundfx/libqcomvoiceprocessing.so',
        'vendor/lib64/soundfx/libquasar.so',
-       'vendor/lib64/soundfx/libreverbaidl.so',
        'vendor/lib64/soundfx/libswdapaidl.so',
        'vendor/lib64/soundfx/libswgamedapaidl.so',
-       'vendor/lib64/soundfx/libvisualizeraidl.so',
        'vendor/lib64/soundfx/libvolumelistener.so',
     ): blob_fixup()
         .replace_needed(

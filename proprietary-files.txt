@@ -313,14 +313,11 @@ vendor/lib64/libcapiv2svarnnvendor.so
 vendor/lib64/libcapiv2udk7vendor.so
 vendor/lib64/libcapiv2uvvendor.so
 vendor/lib64/libmcs.so;DISABLE_CHECKELF
-vendor/lib64/libpalclient.so
 vendor/lib64/libqtigefar.so
 vendor/lib64/libtensorflowlite_c.so
 vendor/lib64/libvui_dmgr.so
 vendor/lib64/libvui_dmgr_client.so
 vendor/lib64/libVoiceSdk.so
-vendor/lib64/vendor.qti.hardware.agm-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.pal-V1-ndk.so
 
 # Audio Config
 vendor/etc/usecaseKvManager.xml
@@ -342,27 +339,17 @@ vendor/etc/microphone_characteristics.xml
 vendor/etc/usecaseKvManager.xml
 
 # Audio FX modules
-vendor/lib64/soundfx/libaudiopreprocessing.so
-vendor/lib64/soundfx/libbundleaidl.so
 vendor/lib64/soundfx/libbundlewrapper.so
 vendor/lib64/soundfx/libdlbvolaidl.so
-vendor/lib64/soundfx/libdownmixaidl.so
 vendor/lib64/soundfx/libdownmix.so
-vendor/lib64/soundfx/libdynamicsprocessingaidl.so
-vendor/lib64/soundfx/libdynproc.so
-vendor/lib64/soundfx/libeffectproxy.so
 vendor/lib64/soundfx/libswdapaidl.so
 vendor/lib64/soundfx/libldnhncr.so
-vendor/lib64/soundfx/libloudnessenhanceraidl.so
 vendor/lib64/soundfx/libqcompostprocbundle.so
 vendor/lib64/soundfx/libqcomvisualizer.so
 vendor/lib64/soundfx/libqcomvoiceprocessing.so
 vendor/lib64/soundfx/libvolumelistener.so
 vendor/lib64/soundfx/libquasar.so
-vendor/lib64/soundfx/libreverbaidl.so
-vendor/lib64/soundfx/libreverbwrapper.so
 vendor/lib64/soundfx/libswgamedapaidl.so
-vendor/lib64/soundfx/libvisualizeraidl.so
 vendor/lib64/soundfx/libvisualizer.so
 
 # Bluetooth
@@ -1946,9 +1933,6 @@ vendor/lib64/libqcodec2_utils.so
 vendor/lib64/libqcodec2_v4l2codec.so
 vendor/lib64/qti.video.utils.videobufferlayout.so
 
-# Memtrack
-vendor/bin/hw/vendor.qti.hardware.memtrack-service
-
 # Native public libraries
 vendor/etc/public.libraries.txt
 
@@ -2158,9 +2142,6 @@ vendor/lib64/libspl.so
 vendor/lib64/libssd.so
 vendor/lib64/vendor.qti.hardware.qseecom-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
-
-# QSPA
-vendor/bin/vendor.qti.qspa-service
 
 # QSPM
 vendor/bin/vendor.qti.qspmhal-service

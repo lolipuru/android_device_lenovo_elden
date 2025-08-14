@@ -60,21 +60,39 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
+    audioadsprpcd \
     audio.r_submix.default \
     audio.usb.default \
     libsoundtriggerhal.qti
 
 PRODUCT_PACKAGES += \
-    audioadsprpcd \
+    libagm_compress_plugin \
+    libagm_mixer_plugin \
+    libagm_pcm_plugin \
+    libagmclient \
+    libagmmixer \
+    libagmipcservice \
+    libaudiochargerlistener \
+    libaudiopreprocessing \
+    libaudioserviceexampleimpl \
     libbatterylistener \
-    libpalclient \
-    libqcompostprocbundle \
-    libqcomvisualizer \
-    libqcomvoiceprocessing \
-    libsndcardparser \
-    libvolumelistener \
+    libbundleaidl \
+    libcustomva_intf \
+    libldnhncr \
+    libdownmixaidl \
+    libdynproc \
+    libdynamicsprocessingaidl \
+    libeffectproxy \
     libhfp_pal \
-    libfmpal
+    libfmpal \
+    libloudnessenhanceraidl \
+    libpalclient \
+    libpalipcservice \
+    libpaleventnotifier \
+    libreverbaidl \
+    libreverbwrapper \
+    libvisualizeraidl \
+    libsndcardparser
 
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8750/audio/primary-hal
 
@@ -93,7 +111,10 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    audio.bluetooth.default
+    audio.bluetooth.default \
+    lib_bt_bundle \
+    lib_bt_aptx \
+    lib_bt_ble
 
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
@@ -174,6 +195,10 @@ PRODUCT_COPY_FILES += \
 	$(AUDIO_HAL_DIR)/configs/common/codec2/service/1.0/c2audio.vendor.base-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2audio.vendor.base-arm64.policy \
 	$(AUDIO_HAL_DIR)/configs/common/codec2/service/1.0/c2audio.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy
 
+# Memtrack
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.memtrack-service
+
 # Network
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml
@@ -187,6 +212,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/power/config/sun/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
+
+# QSPA
+PRODUCT_PACKAGES += \
+    qspa_vendor.rc \
+    vendor.qti.qspa-service
 
 # Rootdir
 PRODUCT_PACKAGES += \
