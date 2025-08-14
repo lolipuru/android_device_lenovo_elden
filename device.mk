@@ -62,7 +62,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.usb.default \
-    libaudiocorehal.default
+    libsoundtriggerhal.qti
 
 PRODUCT_PACKAGES += \
     audioadsprpcd \
