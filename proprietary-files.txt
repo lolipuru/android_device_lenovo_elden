@@ -1345,13 +1345,13 @@ vendor/firmware/evass.mdt
 
 # Configstore
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore-service
+vendor/etc/configstore/wigig.xml
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore-service.rc
 vendor/etc/vintf/manifest/vendor.qti.hardware.capabilityconfigstore-service.xml
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore-impl.so
 vendor/lib64/vendor.qti.hardware.capabilityconfigstore-V1-ndk.so
 
 # Connection Security
-vendor/bin/ssgqmigd
 vendor/bin/ssgqmigd64
 vendor/bin/ssgtzd
 vendor/etc/init/ssgtzd.rc
@@ -1370,6 +1370,7 @@ vendor/etc/init/dataqti.rc
 vendor/etc/init/nicmd.rc
 vendor/etc/init/port-bridge.rc
 vendor/etc/init/shsusrd.rc
+vendor/etc/seccomp_policy/qwesd@2.0.policy
 vendor/lib64/libconfigdb.so
 vendor/lib64/libdsi_netctrl.so
 vendor/lib64/libdsutils.so
@@ -1856,6 +1857,7 @@ vendor/bin/init.qcom.sh
 vendor/etc/init/hw/init.qcom.rc
 
 # Kernel
+vendor/bin/init.kernel.init_boot-memory.sh
 vendor/bin/init.kernel.post_boot-memory.sh
 vendor/bin/init.kernel.post_boot.sh
 vendor/bin/init.kernel.post_boot-sun_5_2.sh
@@ -1866,6 +1868,7 @@ vendor/bin/init.qti.kernel.sh
 vendor/bin/system_dlkm_modprobe.sh
 vendor/bin/vendor_modprobe.sh
 vendor/etc/init/hw/init.qti.kernel.rc
+vendor/etc/init/hw/init.qti.kernel.target.rc
 
 # Keymaster
 vendor/lib64/libkeymasterdeviceutils.so
@@ -2029,6 +2032,8 @@ vendor/lib64/libperipheral_client.so
 vendor/lib64/libspcom.so
 
 # Power-off alarm
+system_ext/app/PowerOffAlarm/PowerOffAlarm.apk
+system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar
 vendor/bin/hw/vendor.qti.hardware.alarm-service
 vendor/bin/power_off_alarm
 vendor/etc/init/vendor.qti.hardware.alarm-service.rc
