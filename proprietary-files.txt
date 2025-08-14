@@ -688,6 +688,10 @@ vendor/lib64/libchinodehmeutils.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libcommonchiutils.so
 vendor/lib64/libdepthcomputation.so
+vendor/lib64/libhdr10plus.so
+vendor/lib64/libhwliqinterface2.so
+vendor/lib64/libhwlispcffdump.so
+vendor/lib64/libisphwsetting.so
 vendor/lib64/libmmcamera_bestats.so
 vendor/lib64/libmmcamera_cac.so
 vendor/lib64/libmmcamera_lscv35.so
@@ -697,24 +701,19 @@ vendor/lib64/libmmcamera_pdpc.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libois_channel_stub.so
 vendor/lib64/liboischannel.so
-vendor/lib64/libopencv.so
-vendor/lib64/libopencv3a.so
 vendor/lib64/libopencv_core.so
 vendor/lib64/libopencv_imgproc.so
+vendor/lib64/libopencv.so
+vendor/lib64/libopencv3a.so
 vendor/lib64/libproj_qmot_tracker.so
 vendor/lib64/libproj_sot.so
+vendor/lib64/libqshcamera.so
 vendor/lib64/libsiminputgenutil.so
 vendor/lib64/libspectre.so
 vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libubifocus.so
 vendor/lib64/vendor.qti.hardware.camera.aon-service-impl.so
 vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so
-
-vendor/lib64/libhwliqinterface2.so
-vendor/lib64/libhwlispcffdump.so
-vendor/lib64/libqshcamera.so
-vendor/lib64/libhdr10plus.so
-vendor/lib64/libisphwsetting.so
 
 # Camera configs
 vendor/etc/camera/10_0.jpg
@@ -2480,6 +2479,24 @@ vendor/lib64/vendor.qti.hardware.trustedui-V1-ndk.so
 
 # Trustzone
 vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk
+
+# Vibrator
+vendor/bin/hw/vendor.qti.hardware.vibrator_dual@1.0-service
+vendor/bin/hw/vendor.qti.hardware.vibrator.service
+vendor/etc/init/vendor.qti.hardware.vibrator_dual@1.0-service.rc
+vendor/etc/init/vendor.qti.hardware.vibrator.service.rc
+vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator_dual.xml
+vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator.service.xml
+vendor/lib64/hw/vibrator.default.so
+vendor/lib64/libaacvibrator.so
+vendor/lib64/libqtivibratoreffect.so
+vendor/lib64/libqtivibratoreffectoffload.so
+vendor/lib64/vendor.aac.hardware.richtap.vibrator-V1-ndk_platform.so
+vendor/lib64/vendor.qti.hardware.vibrator_dual.device-V1-ndk.so
+vendor/lib64/vendor.qti.hardware.vibrator.impl.so
+vendor/lib64/vendor.qti.hardware.vibratorCL.impl.so
+vendor/lib64/vendor.qti.hardware.vibratorOL.impl.so
+vendor/lib64/vendor.qti.hardware.vibratorSel.impl.so
 
 # Video
 vendor/lib64/libstreamparser.so
