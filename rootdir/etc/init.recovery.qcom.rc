@@ -33,6 +33,10 @@ on early-init
     insmod /vendor/lib/modules/spf_core_dlkm.ko
     insmod /vendor/lib/modules/adsp_loader_dlkm.ko
     insmod /vendor/lib/modules/qti_battery_charger.ko
+    # ELDEN code for ELDEN-550 by gaoyh14 at 20250228 start
+    write /proc/sys/kernel/firmware_config/force_sysfs_fallback 1
+    write /sys/class/remoteproc/remoteproc0/state start
+    # ELDEN code for ELDEN-550 by gaoyh14 at 20250228 end
 
 on init
     write /sys/class/backlight/panel0-backlight/brightness 200
@@ -47,10 +51,6 @@ on property:ro.boot.usbcontroller=*
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
-    # ELDEN code for ELDEN-550 by gaoyh14 at 20250228 start
-    write /proc/sys/kernel/firmware_config/force_sysfs_fallback 1
-    write /sys/class/remoteproc/remoteproc0/state start
-    # ELDEN code for ELDEN-550 by gaoyh14 at 20250228 end
 
 # Load ADSP firmware for PMIC
     mkdir /firmware
