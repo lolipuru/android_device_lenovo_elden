@@ -24,15 +24,6 @@
 # OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-on early-init
-    insmod /vendor/lib/modules/q6_pdr_dlkm.ko
-    insmod /vendor/lib/modules/q6_notifier_dlkm.ko
-    insmod /vendor/lib/modules/snd_event_dlkm.ko
-    insmod /vendor/lib/modules/gpr_dlkm.ko
-    insmod /vendor/lib/modules/spf_core_dlkm.ko
-    insmod /vendor/lib/modules/adsp_loader_dlkm.ko
-    insmod /vendor/lib/modules/qti_battery_charger.ko
-
 on init
     write /sys/class/backlight/panel0-backlight/brightness 200
     setprop sys.usb.configfs 1
@@ -46,9 +37,7 @@ on property:ro.boot.usbcontroller=*
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
+    # ELDEN code for ELDEN-550 by gaoyh14 at 20250228 start
     write /proc/sys/kernel/firmware_config/force_sysfs_fallback 1
-    mount_all /vendor/etc/charger_fstab.qti --early
-    mount none /vendor/firmware_mnt/image /vendor/firmware bind rec
-    wait /sys/kernel/boot_adsp/boot
-    write /sys/kernel/boot_adsp/boot 1
-    wait /sys/class/power_supply/battery
+    write /sys/class/remoteproc/remoteproc0/state start
+    # ELDEN code for ELDEN-550 by gaoyh14 at 20250228 end
