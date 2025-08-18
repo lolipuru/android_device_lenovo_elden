@@ -20,11 +20,11 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/lenovo/elden',
     'hardware/qcom-caf/wlan',
     'hardware/qcom-caf/sm8750',
-    'vendor/qcom/opensource/commonsys-intf/display',
-    'vendor/qcom/opensource/dataservices',
+    "vendor/qcom/opensource/commonsys/display",
+    "vendor/qcom/opensource/commonsys-intf/display",
+    "vendor/qcom/opensource/dataservices",
 ]
 
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):

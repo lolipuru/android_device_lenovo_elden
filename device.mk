@@ -159,6 +159,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.composer3-V1-ndk.vendor \
     vendor.qti.hardware.display.composer-service.rc \
     vendor.qti.hardware.display.composer-service.xml \
+    vendor.qti.hardware.display.config-V12-ndk.vendor \
     vendor.qti.hardware.display.demura-service
 
 PRODUCT_COPY_FILES += \
@@ -293,6 +294,10 @@ PRODUCT_COPY_FILES += \
 # Verified boot
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml
+
+# Vibrator
+PRODUCT_COPY_FILES += \
+    vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
 
 # WiFi
 PRODUCT_PACKAGES += \
