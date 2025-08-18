@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from elden (TB322FC_CN_OPEN_USER_Q00041.1_V_ZUXOS_1.1.11.073_ST_250612). 
+## are from elden (TB322FC_CN_OPEN_USER_Q00041.1_V_ZUXOS_1.1.11.120_ST_250727). 
 
 # ACDB
 vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb
@@ -294,12 +294,34 @@ vendor/lib64/bm5a79v08s13n73.bin
 vendor/lib64/bm5a79v08s13n74.bin
 vendor/lib64/bm5a79v08s13n75.bin
 vendor/lib64/bm5a79v08s13n76.bin
+vendor/lib64/libqsegnet.so
+vendor/lib64/qsn1nrt430.bin
+vendor/lib64/qsn1nrt43180.bin
+vendor/lib64/qsn1nrt43270.bin
+vendor/lib64/qsn1nrt4390.bin
+vendor/lib64/qsn1rt1690.bin
+vendor/lib64/qsn1rt169180.bin
+vendor/lib64/qsn1rt169270.bin
+vendor/lib64/qsn1rt16990.bin
+vendor/lib64/qsn1rt430.bin
+vendor/lib64/qsn1rt43180.bin
+vendor/lib64/qsn1rt43270.bin
+vendor/lib64/qsn1rt4390.bin
+vendor/lib64/qsn1rtlp1690.bin
+vendor/lib64/qsn1rtlp169270.bin
+vendor/lib64/qsn1rtlp430.bin
+vendor/lib64/qsn1rtlp43270.bin
+vendor/lib64/qsn2all.bin
+vendor/lib64/qsn3all.bin
 
 # Audio
+vendor/bin/hw/audiohalservice.qti
+vendor/etc/init/audiohalservice_qti.rc
 vendor/etc/models/acd/environment.eai
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
+vendor/etc/vintf/manifest/audioeffectservice_qti.xml
 vendor/etc/vintf/manifest/manifest_audiocorehal_default.xml
 vendor/lib64/hw/libaudiocorehal.default.so
 vendor/lib64/hw/libaudiocorehal.qti.so
@@ -315,9 +337,9 @@ vendor/lib64/libcapiv2uvvendor.so
 vendor/lib64/libmcs.so;DISABLE_CHECKELF
 vendor/lib64/libqtigefar.so
 vendor/lib64/libtensorflowlite_c.so
-vendor/lib64/libvui_dmgr.so
-vendor/lib64/libvui_dmgr_client.so
 vendor/lib64/libVoiceSdk.so
+vendor/lib64/libvui_dmgr_client.so
+vendor/lib64/libvui_dmgr.so
 
 # Audio Config
 vendor/etc/usecaseKvManager.xml
@@ -1456,21 +1478,49 @@ vendor/etc/display/DPU1240.xml
 vendor/etc/display/DPU12__.xml
 vendor/etc/display/DPU9__.xml
 vendor/etc/display/advanced_sf_offsets.xml
+vendor/etc/display/backlight_calib_Sharp_qhd_cmd_mode_dsi_panel.xml
+vendor/etc/display/backlight_calib_Sharp_qhd_video_mode_dsi_panel.xml
+vendor/etc/display/backlight_calib_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml
+vendor/etc/display/backlight_calib_r66451_amoled_video_mode_dsi_visionox_panel_with_DSC.xml
+vendor/etc/display/backlight_calib_vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml
+vendor/etc/display/backlight_calib_vtdr6130_amoled_qsync_cmd_mode_dsi_visionox_panel_with_DSC.xml
+vendor/etc/display/backlight_calib_vtdr6130_amoled_qsync_video_mode_dsi_visionox_panel_with_DSC.xml
+vendor/etc/display/backlight_calib_vtdr6130_amoled_video_mode_dsi_visionox_panel_with_DSC.xml
 vendor/etc/display/camera_alignments.json
 vendor/etc/display/cpu_alignments.json
 vendor/etc/display/default_alignments.json
 vendor/etc/display/display_alignments.json
 vendor/etc/display/formats.json
 vendor/etc/display/graphics_alignments.json
+vendor/etc/display/nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC.json
+vendor/etc/display/nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC_CPHY.json
+vendor/etc/display/nt37801_amoled_video_mode_dsi_csot_panel_with_DSC.json
+vendor/etc/display/nt37801_amoled_video_mode_dsi_csot_panel_with_DSC_CPHY.json
+vendor/etc/display/pipe_config_DPU11__.xml
+vendor/etc/display/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.json
+vendor/etc/display/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.json
+vendor/etc/display/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.json
+vendor/etc/display/qdcm_calib_data_Sharp_4k_video_mode_dsc_dsi_panel.json
+vendor/etc/display/qdcm_calib_data_Sharp_qhd_cmd_mode_dsi_panel.json
+vendor/etc/display/qdcm_calib_data_Sharp_qhd_video_mode_dsi_panel.json
 vendor/etc/display/qdcm_calib_data_nt36523_3k_fhd_plus_165Hz_CPHY_video_panel.json
 vendor/etc/display/qdcm_calib_data_nt36523_fhd_plus_165Hz_CPHY_video_panel.json
 vendor/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_with_DSC.json
 vendor/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_without_DSC.json
-vendor/etc/display/pipe_config_DPU11__.xml
+vendor/etc/display/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json
+vendor/etc/display/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_panel_without_DSC.json
+vendor/etc/display/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_panel_with_DSC.json
+vendor/etc/display/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_panel_without_DSC.json
+vendor/etc/display/qdcm_calib_data_sharp_1080p_cmd_mode_dsi_panel.json
+vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json
+vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_qsync_cmd_mode_dsi_visionox_panel_with_DSC.json
+vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_qsync_video_mode_dsi_visionox_panel_with_DSC.json
+vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_video_mode_dsi_visionox_panel_with_DSC.json
 vendor/etc/display/sdm_display_resolution_extn.xml
 vendor/etc/display/thermallevel_to_fps.xml
 vendor/etc/display/ubwc_alignments.json
 vendor/etc/display/video_alignments.json
+vendor/etc/display/vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json
 vendor/etc/clstc_config_library.xml
 vendor/lib64/libclstc_algorithm_adapter.so
 vendor/lib64/libclstc_gcp_adapter.so
@@ -1607,7 +1657,6 @@ vendor/firmware/gen80000_aqe.fw
 vendor/firmware/gen80000_gmu.bin
 vendor/firmware/gen80000_sqe.fw
 vendor/firmware/gen80000_zap.mbn
-vendor/firmware/gen80600_gmu.bin
 vendor/firmware/gmu_gen70900.bin
 
 # Haptic
@@ -1947,19 +1996,21 @@ vendor/lib64/libdsd2pcm.so
 
 # Perf
 vendor/bin/hw/vendor.qti.hardware.perf2-hal-service
+vendor/bin/hw/vendor.qti.MemHal-service
 vendor/etc/init/vendor.qti.hardware.perf2-hal-service.rc
+vendor/etc/init/vendor.qti.MemHal-service.rc
 vendor/etc/lm/AppClassifierFeature.xml
 vendor/etc/lm/LightningLaunchesFeature.xml
-vendor/etc/lm/PreKillFeature.xml
 vendor/etc/lm/PrefAppsFeature.xml
+vendor/etc/lm/prekill/prekill_2GB.data
+vendor/etc/lm/prekill/prekill_4GB.data
+vendor/etc/lm/prekill/prekill_6GB.data
+vendor/etc/lm/PreKillFeature.xml
 vendor/etc/lm/ProCompFeature.xml
 vendor/etc/lm/QAPE.xml
 vendor/etc/lm/QGPE.xml
 vendor/etc/lm/QGPEActionMap.xml
 vendor/etc/lm/SilkyScrollsFeature.xml
-vendor/etc/lm/prekill/prekill_2GB.data
-vendor/etc/lm/prekill/prekill_4GB.data
-vendor/etc/lm/prekill/prekill_6GB.data
 vendor/etc/perf/avcsysnodesconfigs.xml
 vendor/etc/perf/commonresourceconfigs.xml
 vendor/etc/perf/commonsysnodesconfigs.xml
@@ -1978,11 +2029,12 @@ vendor/etc/perf/testtargetresourceconfigs.xml
 vendor/etc/pwr/CameraPowerOptFeature.xml
 vendor/etc/pwr/GamePowerOptFeature.xml
 vendor/etc/pwr/OffScreenPowerOptFeature.xml
-vendor/etc/pwr/PSMPowerOptFeature.xml
 vendor/etc/pwr/PowerFeatureConfig.xml
+vendor/etc/pwr/PSMPowerOptFeature.xml
 vendor/etc/pwr/VideoPowerOptFeature.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.perf2.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.power.powermodule.xml
+vendor/etc/vintf/manifest/vendor.qti.MemHal.xml
 vendor/lib64/libaodoptfeature.so
 vendor/lib64/libapengine.so
 vendor/lib64/libappclassifier.so
@@ -1995,7 +2047,6 @@ vendor/lib64/libmeters-ns.so
 vendor/lib64/libmeters.so
 vendor/lib64/liboffscreenpoweroptfeature.so
 vendor/lib64/libpasrutils.so
-vendor/lib64/libqti-perfextn-intf.so
 vendor/lib64/libperfconfig.so
 vendor/lib64/libperfioctl.so
 vendor/lib64/libprefapps.so
@@ -2004,8 +2055,10 @@ vendor/lib64/libprocomp.so
 vendor/lib64/libpsmoptfeature.so
 vendor/lib64/libq-perflog.so
 vendor/lib64/libqapesdk.so;DISABLE_CHECKELF
+vendor/lib64/libqti-MemHal-client.so
 vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti-perfd.so
+vendor/lib64/libqti-perfextn-intf.so
 vendor/lib64/libqti-s3tf.so
 vendor/lib64/libqti-scenariod.so
 vendor/lib64/libqti-util.so
@@ -2016,12 +2069,13 @@ vendor/lib64/vendor.qti.hardware.iop@1.0.so
 vendor/lib64/vendor.qti.hardware.iop@2.0.so
 vendor/lib64/vendor.qti.hardware.perf2-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.power.powermodule-V1-ndk.so
+vendor/lib64/vendor.qti.MemHal-V1-ndk.so
 vendor/lib64/vendor.qti.memory.pasrmanager-V1-ndk.so
 vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so
 vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so
-vendor/lib64/vendor.qti.snapdragonServices.qape-V1-ndk.so
-vendor/lib64/vendor.qti.snapdragonServices-V1-ndk.so
 vendor/lib64/vendor.qti.power.pasrmanager@1.0.so
+vendor/lib64/vendor.qti.snapdragonServices-V1-ndk.so
+vendor/lib64/vendor.qti.snapdragonServices.qape-V1-ndk.so
 
 # Peripheral manager
 vendor/bin/pm-proxy
@@ -2092,6 +2146,10 @@ vendor/bin/qguard
 vendor/etc/init/qguard.rc
 vendor/etc/qguard.json
 
+# QLM
+vendor/bin/qlm-service
+vendor/etc/init/init.qlm-service.rc
+
 # QMI
 system/etc/sysconfig/qti_whitelist.xml
 vendor/bin/irsc_util
@@ -2119,6 +2177,7 @@ vendor/lib64/libqmi_csvt_srvc.so
 vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmi_legacy.so
 vendor/lib64/libqmiservices.so
+vendor/lib64/libqsocket.so
 
 # QSAP
 vendor/etc/seccomp_policy/qsap_qapeservice.policy
@@ -2147,6 +2206,9 @@ vendor/lib64/libspl.so
 vendor/lib64/libssd.so
 vendor/lib64/vendor.qti.hardware.qseecom-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
+
+# QSPA
+vendor/etc/qspa/nsp_disabled.rc
 
 # QSPM
 vendor/bin/vendor.qti.qspmhal-service
@@ -2226,12 +2288,15 @@ vendor/lib64/vendor.qti.hardware.secureprocessor.device-V1-ndk.so
 # Sensors
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate-service
 vendor/bin/init.qcom.sensors.sh
+vendor/bin/qsap_sensors
 vendor/bin/sensors.qti
 vendor/bin/sscrpcd
 vendor/etc/init/init.vendor.sensors.rc
+vendor/etc/init/vendor.qsap.sensors.rc
 vendor/etc/init/vendor.qti.hardware.sensorscalibrate-service.rc
 vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
+vendor/etc/seccomp_policy/qsap_sensors.policy
 vendor/etc/vintf/manifest/vendor.qti.hardware.sensorscalibrate.xml
 vendor/etc/sensors/config/bonito_bu52053nvx_0.json
 vendor/etc/sensors/config/bonito_ccd_base.json
@@ -2404,6 +2469,13 @@ vendor/bin/hw/sxrservice
 vendor/etc/seccomp_policy/sxr@2.0.policy
 vendor/lib64/libsxrservice.so
 
+# System Health Monitor
+vendor/bin/vendor.qti.syshealthmon-service
+vendor/etc/init/vendor.qti.syshealthmon-service.rc
+vendor/etc/seccomp_policy/syshealthmon.policy
+vendor/etc/vintf/manifest/vendor.qti.syshealthmon-service.xml
+vendor/lib64/vendor.qti.syshealthmon-V1-ndk.so
+
 # Touchscreen
 vendor/firmware/novatek_ts_csot_3k_fw.bin
 vendor/firmware/novatek_ts_csot_3k_mp.bin
@@ -2434,9 +2506,14 @@ vendor/etc/thermal-engine_gpu_2.conf
 vendor/etc/thermal-engine_sensor_0.conf
 vendor/etc/thermal_user_case.conf
 
+# TFTP
+vendor/bin/tftp_server
+vendor/etc/init/vendor.qti.tftp.rc
+
 # Thermal engine
 vendor/bin/thermal-engine-v2
 vendor/etc/init/init_thermal-engine-v2.rc
+vendor/etc/thermal-engine.conf
 
 # Time services
 vendor/app/TimeService/TimeService.apk
@@ -2466,7 +2543,12 @@ vendor/lib64/vendor.qti.hardware.trustedui-V1-ndk.so
 # Trustzone
 vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk
 
+# Uevent
+odm/etc/ueventd.rc
+
 # Vibrator
+odm/etc/aac_richtap_l.config
+odm/etc/aac_richtap_r.config
 vendor/bin/hw/vendor.qti.hardware.vibrator_dual@1.0-service
 vendor/bin/hw/vendor.qti.hardware.vibrator.service
 vendor/etc/init/vendor.qti.hardware.vibrator_dual@1.0-service.rc
