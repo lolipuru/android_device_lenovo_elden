@@ -1425,17 +1425,10 @@ vendor/lib64/libhdr_backlight_adapter.so
 vendor/lib64/libhdr_tm.so
 
 # Display HWC
-vendor/bin/hw/vendor.qti.hardware.display.allocator-service
 vendor/bin/hw/vendor.qti.hardware.display.composer-service;DISABLE_CHECKELF
-vendor/bin/hw/vendor.qti.hardware.display.demura-service
 vendor/bin/qdcmss
 vendor/bin/ubwcconvert
 vendor/etc/init/qdcmss.rc
-vendor/etc/init/vendor.qti.hardware.display.allocator-service.rc
-vendor/etc/init/vendor.qti.hardware.display.composer-service.rc
-vendor/etc/init/vendor.qti.hardware.display.demura-service.rc
-vendor/etc/vintf/manifest/vendor.qti.hardware.display.allocator-service.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.display.demura-service.xml
 vendor/lib64/libbacklight-calib.so
 vendor/lib64/libdigital-dimming.so
 vendor/lib64/libdpps.so
@@ -1447,9 +1440,6 @@ vendor/lib64/libqdcm-algo.so
 vendor/lib64/libqdcm-json-mode-parser.so
 vendor/lib64/libqdcm-mode-parser.so
 vendor/lib64/libqdutils.so
-vendor/lib64/libsdmcore.so
-vendor/lib64/libsdmdal.so
-vendor/lib64/libsdmutils.so
 vendor/lib64/libsnapdragoncolor-manager.so
 vendor/lib64/libsnapdragoncolor-qdcm.so
 vendor/lib64/vendor.qti.hardware.display.snapalloc-impl.so
