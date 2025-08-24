@@ -1614,8 +1614,11 @@ vendor/lib64/vendor.qti.hardware.fm-V1-ndk.so
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper-service-qti
+vendor/bin/hw/android.hardware.gatekeeper-service-spu-qti
 vendor/etc/init/android.hardware.gatekeeper-service-qti.rc
+vendor/etc/init/android.hardware.gatekeeper-service-spu-qti.rc
 vendor/lib64/hw/libqtigatekeeper.so
+vendor/lib64/hw/libspuqtigatekeeper.so
 
 # Graphics
 vendor/app/com.qualcomm.qti.gpudrivers.sun.api35/com.qualcomm.qti.gpudrivers.sun.api35.apk
@@ -1928,9 +1931,16 @@ vendor/lib64/libqtikeymaster4.so
 
 # Keymint
 vendor/bin/hw/android.hardware.security.keymint-service-qti
+vendor/bin/hw/android.hardware.security.keymint-service-spu-qti;DISABLE_CHECKELF
 vendor/etc/init/android.hardware.security.keymint-service-qti.rc
+vendor/etc/init/android.hardware.security.keymint-service-spu-qti.rc
 vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti.xml
+vendor/lib64/android.hardware.security.sharedsecret-V2-ndk.so;MODULE_SUFFIX=-vendor;MAKE_COPY_RULE
 vendor/lib64/libqtikeymint.so
+vendor/lib64/libspukeymint.so;DISABLE_CHECKELF
+vendor/lib64/libspukeymintdeviceutils.so
+vendor/lib64/libspukeymintprovision.so
+vendor/lib64/libspukeymintutils.so
 
 # Listen
 vendor/lib64/libeai_fixed.so
@@ -2600,6 +2610,10 @@ vendor/firmware/vpu33_4v.mbn
 vendor/firmware/vpu33_4v_unsigned.mbn
 vendor/firmware/vpu35_4v.mbn
 vendor/firmware/vpu35_4v_unsigned.mbn
+
+# Weaver
+vendor/bin/hw/android.hardware.weaver-service-spu-qti
+vendor/etc/init/android.hardware.weaver-service-spu-qti.rc
 
 # Widevine DRM
 vendor/apex/com.google.android.widevine.nonupdatable.apex

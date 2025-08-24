@@ -162,6 +162,9 @@ persist.vendor.radio.enableadvancedscan=true
 persist.vendor.rcs.singlereg.feature=1
 ro.com.android.dataroaming=true
 
+# SPU
+vendor.spu.rkp_enabled=true
+
 # USB
 ro.recovery.usb.adb.pid=D001
 ro.recovery.usb.fastboot.pid=4EE0

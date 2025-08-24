@@ -42,6 +42,7 @@ lib_fixups: lib_fixups_user_type = {
         'libarmemlog',
         'libvui_intf',
         'vendor.qti.hardware.display.config-V12-ndk',
+        'android.hardware.security.sharedsecret-V2-ndk',
     ): lib_fixup_remove,
 }
 
@@ -192,6 +193,13 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/c2.dolby.hevc.dec.so',
     ): blob_fixup()
         .add_needed('libcodec2_shim.so'),
+    (
+        'vendor/lib64/libspukeymintprovision.so',
+    ): blob_fixup()
+        .replace_needed(
+            'android.hardware.security.keymint-V2-ndk.so',
+            'android.hardware.security.keymint-V3-ndk.so'
+        ),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
