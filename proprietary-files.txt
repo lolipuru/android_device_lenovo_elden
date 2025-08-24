@@ -1793,7 +1793,6 @@ vendor/firmware/251_CQA_RTP.bin
 vendor/firmware/Ding_RTP_23.bin
 vendor/firmware/Dreams_RTP.bin
 vendor/firmware/MaLing1_RTP.bin
-vendor/firmware/SAVONA_V8_TLC_512Gb_UFS41_P05_FW00.bin
 vendor/firmware/Stars2_RTP.bin
 vendor/firmware/TribalLangua_RTP.bin
 vendor/firmware/aw8697_haptic.bin
@@ -2554,6 +2553,10 @@ vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk
 
 # Uevent
 odm/etc/ueventd.rc
+
+# UFS
+vendor/firmware/SAVONA_V8_TLC_512Gb_UFS41_P05_FW00.bin
+vendor/firmware/ffu_config.txt
 
 # Vibrator
 odm/etc/aac_richtap_l.config
