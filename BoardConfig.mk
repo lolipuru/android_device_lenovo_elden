@@ -196,8 +196,8 @@ DEVICE_MANIFEST_SKUS := sun
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 DEVICE_MANIFEST_SUN_FILES := \
     $(DEVICE_PATH)/configs/vintf/manifest_sun.xml \
-    hardware/qcom-caf/sm8750/audio/primary-hal/configs/common/manifest_non_qmaa.xml \
-    hardware/qcom-caf/sm8750/audio/primary-hal/configs/common/manifest_non_qmaa_extn.xml
+    hardware/qcom-caf/sm8750/audio/primary-hal/configs/common/manifest_audiocorehal_default.xml \
+    hardware/qcom-caf/sm8750/audio/primary-hal/configs/common/audioeffectservice_qti.xml
 
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/vintf/compatibility_matrix.device.xml \
