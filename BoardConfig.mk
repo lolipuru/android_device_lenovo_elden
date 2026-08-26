@@ -72,10 +72,19 @@ BOARD_KERNEL_PAGESIZE   := 4096
 BOARD_KERNEL_BASE       := 0x00000000
 
 BOARD_KERNEL_CMDLINE := \
-    video=vfb:640x400,bpp=32,memsize=3072000
+    video=vfb:640x400,bpp=32,memsize=3072000 \
+    panic=10 \
+    hung_task_timeout_secs=30 \
+    hung_task_panic=1 \
+    softlockup_panic=1 \
+    console=ttynull \
+    qcom_geni_serial.con_enabled=0 \
+    printk.devkmsg=on \
+    printk.always_kmsg_dump=1
 
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
+    androidboot.init_fatal_panic=true \
     androidboot.hypervisor.protected_vm.supported=true \
     androidboot.memcg=1 \
     androidboot.usbcontroller=a600000.dwc3 \
