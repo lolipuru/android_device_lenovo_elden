@@ -66,33 +66,50 @@ PRODUCT_PACKAGES += \
     libsoundtriggerhal.qti
 
 PRODUCT_PACKAGES += \
+    android.hardware.audio.common-V3-ndk \
+    android.hardware.audio.core-V2-ndk \
+    android.hardware.audio.core.sounddose-V1-ndk \
+    android.hardware.audio.core.sounddose-V1-ndk.vendor \
+    android.hardware.audio.core.sounddose-V2-ndk \
+    android.hardware.audio.effect-V2-ndk \
+    android.hardware.bluetooth.audio-V4-ndk \
+    android.hardware.common-V2-ndk \
+    android.hardware.common.fmq-V1-ndk \
+    android.hardware.thermal@1.0.vendor \
+    android.media.audio.common.types-V3-ndk \
     libagm_compress_plugin \
     libagm_mixer_plugin \
     libagm_pcm_plugin \
     libagmclient \
-    libagmmixer \
     libagmipcservice \
+    libagmmixer \
+    libalsautilsv2.vendor \
+    libaudio_aidl_conversion_common_ndk.vendor \
     libaudiochargerlistener \
     libaudiopreprocessing \
     libaudioserviceexampleimpl \
     libbatterylistener \
     libbundleaidl \
     libcustomva_intf \
-    libldnhncr \
     libdownmixaidl \
-    libdynproc \
     libdynamicsprocessingaidl \
+    libdynproc \
     libeffectproxy \
-    libhfp_pal \
     libfmpal \
+    libhfp_pal \
+    libldnhncr \
     libloudnessenhanceraidl \
+    libmediautils_vendor.vendor \
+    libmemunreachable.vendor \
     libpalclient \
-    libpalipcservice \
     libpaleventnotifier \
+    libpalipcservice \
     libreverbaidl \
     libreverbwrapper \
+    libsndcardparser \
+    libtinyalsav2.vendor \
     libvisualizeraidl \
-    libsndcardparser
+    libvibratorutils.vendor
 
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8750/audio/primary-hal
 
